@@ -2,7 +2,7 @@
 
 ## 프로젝트 개요
 본 프로젝트는 야외 작업자의 건강을 실시간으로 모니터링하고 온열질환을 예방하기 위한 종합적인 디지털 헬스케어 솔루션입니다.
-- 각 구성 요소(Flutter, Flask Server, MySQL DB, Arudino)는 별도의 브랜치로 관리됩니다.
+- **각 구성 요소(Flutter, Flask Server, MySQL DB, Arudino)는 별도의 브랜치로 관리됩니다.**
 
 ## 주요 기능
 
