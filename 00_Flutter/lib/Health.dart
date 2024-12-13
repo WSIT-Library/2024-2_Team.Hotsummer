@@ -14,7 +14,7 @@ class _HealthState extends State<Health> {
   double? heatIllnessProbability;
 
   Future<void> _fetchHeatIllnessProbability() async {
-    final String baseUrl = 'http://[Flask서버주소]/get_illness_data';
+    final String baseUrl = 'http://172.16.5.113:5000/get_illness_data';
     try {
       final response = await http.post(
         Uri.parse(baseUrl),

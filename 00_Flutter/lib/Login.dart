@@ -11,7 +11,7 @@ class Login extends StatefulWidget {
 class _LoginState extends State<Login> {
   final TextEditingController _idController = TextEditingController();
   final TextEditingController _passwordController = TextEditingController();
-  final String baseUrl = 'http://[Flask서버주소]'; // Flask 서버 주소
+  final String baseUrl = 'http://172.16.5.113:5000'; // Flask 서버 주소
 
   Future<void> login() async {
     final String id = _idController.text.trim();

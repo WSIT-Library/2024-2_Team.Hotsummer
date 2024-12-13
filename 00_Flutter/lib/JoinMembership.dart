@@ -35,7 +35,7 @@ class _JoinMembershipState extends State<JoinMembership> {
         return;
     }
 
-    var checkUserUrl = Uri.parse('http://[Flask서버주소]/check_user'); // Flask 서버 주소 변경 필요
+    var checkUserUrl = Uri.parse('http://172.16.5.113:5000/check_user'); // Flask 서버 주소 변경 필요
     try {
         var response = await http.post(
             checkUserUrl,
@@ -51,7 +51,7 @@ class _JoinMembershipState extends State<JoinMembership> {
                 _showMessage('이미 존재하는 아이디입니다. 회원가입이 불가능합니다.');
             } else {
                 // 회원가입 API 호출
-                var signUpUrl = Uri.parse('http://[Flask서버주소]/signup'); // 회원가입 API 주소
+                var signUpUrl = Uri.parse('http://172.16.5.113:5000/signup'); // 회원가입 API 주소
                 var signUpResponse = await http.post(
                     signUpUrl,
                     headers: {'Content-Type': 'application/json'},
